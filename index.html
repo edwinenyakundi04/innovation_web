@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        BEAUTYPAYS
+    </title>
+    <style>
+        body{
+      background-color: antiquewhite;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .container{
+      width: 100%;
+      background-color: antiquewhite;
+  }
+  .header{
+      background-color: antiquewhite;
+      text-align: center;
+      color: green;
+      font-size: xx-large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 600;
+      font-display: display;
+  }
+  .nav,.content{
+      background-color: antiquewhite;
+      float: left;
+      padding: auto;
+      box-sizing: border-box;
+      min-height: 170px;
+  }
+  .nav{
+      width: 20%;
+      background-color: antiquewhite;
+      color: darkolivegreen;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 400;
+      display: inline;
+  
+  }
+  .content{
+      width: 80%;
+      background-color:antiquewhite;
+      font-size: large;
+      font-weight: 600;
+      color: green;
+      font-size: xx-large;
+      text-align: center;
+  }
+  #login{
+      font-size: medium;
+      text-align: center;
+      font-weight: 100;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+      padding: 300px;
+      background-color: antiquewhite;
+  }
+  #mail,#pass{
+      width: 200px;
+      padding: 2px;
+  }
+  #lgbtn{
+      background-color: green;
+  }
+  #rgbtn{
+      background-color: green;
+  }
+  
+      </style>
+      <script src="beauty.js" defer></script>
+  </head>
+  <body>
+  <div class="container">
+  <div class="header">
+    <h1>YOUR BEAUTY PAYS!!!</h1>
+  </div>
+  <img src="edu.jpg">
+  <div class="wrapper clear-fix">
+    <nav>
+    <ul>
+    <li><a href="registration.html">REGISTER</a></li>
+    <li><a href="index.html">LOGIN</a></li>
+    <li><a href="SOCIAL.html">SOCIAL MEDIA</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="CONTACTS.html">CONTACTS</a></li>
+    <li><a href="EVENTS.html">EVENTS</a></li>
+    <li><a href="attribute.html">AKNOWLEDGEMENT</a></li>
+    </ul>
+    </nav>
+    
+    <div class="content">
+      welcome......
+      make money from thy beauty.<br>
+      <legend>
+      <form id="login"method="POST">
+          LOGIN FORM<br />
+          E-MAIL  :<input type="email"id="mail"placeholder="example navyzeal2@gmail.com"required>
+          <br />
+          PASSWORD:<input type="password"id="pass"required><br />
+          <input type="button"id="lgbtn"class="logbtn"value="LOGIN">OR  <input type="button"id="rgbtn"class="regbtn"value="REGISTER"><br />
+          forgot your password?click here to <a href="reset">RESET PASSWORD</a>
+          
+        </form>
+  </legend>
+    
+  
+    </div>
+  </div>
+  </div>
+ <footer class="bot">
+    <p>copyright &copy;beautypays.com 2023</p>
+  </footer>
+  
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD4D4TK-iwNdVSr8k-OJrxnfTCCMOrjPEA",
+      authDomain: "beautypays-41776.firebaseapp.com",
+      projectId: "beautypays-41776",
+      storageBucket: "beautypays-41776.appspot.com",
+      messagingSenderId: "14864804601",
+      appId: "1:14864804601:web:1de8faec3da3564bb69028",
+      measurementId: "G-3B6QJLQ5WX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  
+</body>
+</html>
